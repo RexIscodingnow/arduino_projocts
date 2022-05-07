@@ -1,5 +1,3 @@
 # arduino_projocts
-  All projects(files) has been practicing practice since 2016 summer vacation(in July).
-  Practice 3 years
-  
-  *國中三年練習的紀錄*
+**國中整整三年練習的紀錄，檔名蠻亂，這些是當時原生編輯檔案直接搬過來，檔名懶得改了(多啊~)**
+**拜託別打我(怕爆)**
