@@ -1,25 +1,25 @@
 /*
  * arduino hc-05 master code for remote control car
- * hc-05»»±±¾¹
+ * hc-05é™æ§å™¨
  */
 
 void setup() {
-  Serial.begin(9600); //hc-05¶Ç¿é¥Î(¹ïÀ³AT command³]©w)
+  Serial.begin(9600); //hc-05å‚³è¼¸ç”¨(å°æ‡‰AT commandè¨­å®š)
   pinMode(2, INPUT);
   pinMode(3, INPUT);
   pinMode(A0, INPUT);
 }
 
 void loop() {
-  if(digitalRead(2) == LOW){    // «e«á±±¨î
+  if(digitalRead(2) == LOW){    // å‰å¾Œæ§åˆ¶
     Serial.write(182);
   }
-  if(digitalRead(3) == LOW){    // «e«á±±¨î
+  if(digitalRead(3) == LOW){    // å‰å¾Œæ§åˆ¶
     Serial.write(183);
   }  
   if(digitalRead(2) == HIGH && digitalRead(3) == HIGH){
     Serial.write(181);
   }
-  Serial.write(analogRead(A0)/11); // Âà¦V±±¨î
+  Serial.write(analogRead(A0)/11); // è½‰å‘æ§åˆ¶
   delay(20);
 }
